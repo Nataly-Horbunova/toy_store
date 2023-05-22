@@ -1,0 +1,19 @@
+@import '../../styles/mixins_and_placeholders';
+@import '../../styles/variables';
+
+.ProductsSection{
+  margin-top: 40px;
+  @include  flex(flex-start, stretch, 20px, column);
+
+  .section_title{
+    font-size: $fz-l;
+
+  }
+
+  .section_products_list{
+    @include  flex(flex-start, stretch, 20px);
+    flex-wrap: wrap;
+
+
+  }
+}

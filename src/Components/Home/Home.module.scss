@@ -1,0 +1,10 @@
+@import "../../styles/mixins_and_placeholders";
+@import "../../styles/variables";
+
+.Home {
+  .home_container {
+    .catalog_and_carousel_wrapper {
+      @include flex(space-between, flex-start, 10px);
+    }
+  }
+}

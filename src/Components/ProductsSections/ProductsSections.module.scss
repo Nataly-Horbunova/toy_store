@@ -1,0 +1,8 @@
+@import '../../styles/mixins_and_placeholders';
+@import '../../styles/variables';
+
+.ProductsSections{
+@include flex (space-between, center, 0, column);
+
+
+}

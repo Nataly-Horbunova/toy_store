@@ -1,0 +1,27 @@
+@import "../../styles/mixins_and_placeholders";
+@import "../../styles/variables";
+
+.Catalog_nav {
+  padding: 30px;
+  background-color: $secondary-color;
+  border-radius: 0 0 10px 10px;
+  box-shadow: $box-shadow;
+  align-self: stretch;
+
+  .catalog_nav_list {
+    @include flex(space-between, flex-start, 20px, column);
+
+
+    .catalog_nav_item {
+      .catalog_nav_link {
+        @include flex(flex-start, center, 10px);
+        @extend %link;
+        font-weight: 500;
+
+        img{
+          height: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.ProductSmallCard {
+  position: relative;
+  flex-basis: calc(20% - 16px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  background-color: #FFF;
+  padding: 20px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 8, 29, 0.05), 0px 0px 2px rgba(0, 8, 29, 0.06), 0px 1px 3px rgba(0, 8, 29, 0.08);
+  transition: 0.2s ease-in;
+}
+.ProductSmallCard:hover {
+  box-shadow: 0px 12px 17px rgba(0, 8, 29, 0.05), 0px 5px 22px rgba(0, 8, 29, 0.06), 0px 7px 8px rgba(0, 8, 29, 0.08);
+}
+.ProductSmallCard .product_img {
+  width: 100%;
+  padding: 10px 10px 0;
+  cursor: pointer;
+}
+.ProductSmallCard .product_title {
+  font-size: clamp(14px, 1.1428571429vw, 16px);
+  line-height: clamp(18px, 1.5714285714vw, 22px);
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.ProductSmallCard .product_price {
+  font-size: clamp(20px, 1.7142857143vw, 24px);
+  line-height: clamp(30px, 2.5714285714vw, 36px);
+  font-weight: 700;
+  align-self: flex-start;
+  margin-top: 16px;
+}
+.ProductSmallCard .product_cart_icon {
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+  height: 26px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.ProductSmallCard .product_cart_icon:hover {
+  transform: scale(1.08);
+}
+.ProductSmallCard .product_favourite_icon {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.ProductSmallCard .product_favourite_icon:hover {
+  transform: scale(1.08);
+}
+
+/*# sourceMappingURL=ProductSmallCard.module.css.map */

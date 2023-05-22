@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["ProductsSection.module.scss","../../styles/_mixins_and_placeholders.scss","../../styles/_variables.scss"],"names":[],"mappings":"AAGA;EACE;ECDA;EACA,iBDCe;ECAf;EACA,gBDD0C;ECE1C,KDFoC;;AAEpC;EACE,WEMG;;AFFL;ECTA;EACA,iBDSiB;ECRjB,aDQ6B;ECN7B,KDMsC;EACpC","file":"ProductsSection.module.css"}

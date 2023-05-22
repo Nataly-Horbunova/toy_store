@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+@import '../../styles/mixins_and_placeholders';
+
+.Reviews {
+  margin-top: 10px;
+  background-color: $secondary-color;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px 30px;
+
+  .reviews_tittle {
+    font-size: $fz-m;
+    line-height: $lh-m;
+  }
+
+  .reviews_list {
+    @include flex(flex-start, flex-start, 20px, column);
+    margin-top: 30px;
+
+    .reviews_item {
+      .reviews_author {
+        font-size: $fz-s;
+        line-height: $lh-s;
+        font-weight: 500;
+      }
+
+      .reviews_message {
+        margin-top: 8px;
+        font-size: $fz-xs;
+        line-height: $lh-xs;
+      }
+
+      .reviews_date {
+        margin-top: 2px;
+        font-size: $fz-xxs;
+        line-height: $lh-xxs;
+        font-style: italic;
+      }
+    }
+  }
+
+
+  .reviews_form {
+    @include flex(flex-start, flex-start, 16px, column);
+    margin-top: 30px;
+
+    .reviews_form_name {
+      min-width: 300px;
+      @extend %form;
+    }
+
+    .reviews_form_message {
+      resize: none;
+      min-width: 300px;
+      height: 100px;
+      @extend %form;
+    }
+
+    .reviews_form_btn{
+      @extend %button;
+    }
+  }
+}

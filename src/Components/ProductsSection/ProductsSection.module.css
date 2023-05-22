@@ -1,0 +1,20 @@
+.ProductsSection {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 20px;
+}
+.ProductsSection .section_title {
+  font-size: clamp(20px, 1.7142857143vw, 24px);
+}
+.ProductsSection .section_products_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=ProductsSection.module.css.map */

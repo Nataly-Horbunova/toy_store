@@ -1,0 +1,67 @@
+@import '../../styles/mixins_and_placeholders';
+@import '../../styles/variables';
+
+.ProductSmallCard {
+  position: relative;
+  flex-basis: calc(100%/5 - 20px*4/5);
+  @include flex(space-between, center, 0, column);
+  background-color: $secondary-color;
+  padding: 20px 16px;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  transition: 0.2s ease-in;
+
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+
+  .product_img {
+    width: 100%;
+    padding: 10px 10px 0;
+    cursor: pointer;
+  }
+
+  .product_title {
+    font-size: $fz-s;
+    line-height: $lh-s;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .product_price {
+    font-size: $fz-l;
+    line-height: $lh-xl;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-top: 16px;
+  }
+
+  .product_cart_icon {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    height: 26px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+
+    &:hover{
+      transform: scale(1.08);
+    }
+  }
+
+  .product_favourite_icon {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+
+    &:hover{
+      transform: scale(1.08);
+    }
+  }
+
+}

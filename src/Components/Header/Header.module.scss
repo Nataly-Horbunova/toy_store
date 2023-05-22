@@ -1,0 +1,167 @@
+@import "../../styles/mixins_and_placeholders";
+@import "../../styles/variables";
+
+
+.Header {
+
+  //=========== Header-top ===========
+
+  .header_top {
+    padding: 10px 0;
+    background-color: $secondary-color;
+
+    .header_top_container {
+      @include flex(space-between, center, 20px);
+
+      .logo_and_nav_wrapper {
+        @include flex(space-between, center, 40px);
+
+        .header_logo_link {
+          max-width: 160px;
+
+          .header_logo_img {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .header_nav {
+          .Header_nav_list {
+            @include flex(space-between, center, 30px);
+
+            .header_nav_list_item {
+              transition: 0.1s;
+
+              .header_nav_link {
+                font-weight: 500;
+                font-size: $fz-s;
+                line-height: $lh-s;
+                @extend %link;
+
+              }
+            }
+          }
+        }
+      }
+
+      .login_wrapper {
+        @include flex(space-between, center, 10px);
+        cursor: pointer;
+        @extend %link;
+
+        .login_icon {
+          max-width: 20px;
+        }
+
+        .login_text {
+          font-weight: 500;
+        }
+
+
+      }
+    }
+  }
+
+  // ============= Header-bottom ==============
+
+  .header_bottom {
+    background-color: $main-color;
+    color: $secondary-color;
+    padding: 20px 0;
+
+    &.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .header_bottom_container {
+
+
+      .catalog {
+        @include flex(flex-start, center, 20px);
+
+        &_icon {
+          width: 24px;
+          cursor: pointer;
+          transition: 0.3s ease-in;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        &_text {
+          font-weight: 500;
+          font-size: $fz-m;
+          line-height: $lh-m;
+        }
+      }
+
+      @include flex(space-between, center, 30px);
+
+      .search_wrapper {
+        @include flex(space-between, center, 10px);
+        flex-grow: 1;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 6px;
+
+        .search_input {
+          flex-grow: 1;
+          font-size: $fz-s;
+          line-height: $lh-s;
+          padding: 0;
+          border: none;
+          color: $main-text-color;
+
+          &::placeholder {
+            font-size: $fz-s;
+            line-height: $lh-s;
+            color: transparentize($main-text-color, 0.5)
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .search_icon {
+          @extend %icon;
+        }
+      }
+
+      .icons_group {
+        @include flex(space-between, center, 20px);
+
+        .icon_wrapper {
+          position: relative;
+
+          .icon_img {
+            @extend %icon;
+            width: 100%;
+          }
+
+          .icon_qty {
+            @include flex(center, center);
+            position: absolute;
+            background-color: $tertiary-color;
+            padding: 1px;
+            top: -8px;
+            right: -8px;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            font-size: 12px;
+            line-height: 12px;
+          }
+
+
+        }
+
+      }
+    }
+  }
+}
+

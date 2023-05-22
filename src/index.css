@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Medium.woff2") format("woff2"), url("../fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Varela Round";
+  src: url("../fonts/VarelaRound-Regular.woff2") format("woff2"), url("../fonts/VarelaRound-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 1.1428571429vw, 16px);
+  line-height: clamp(18px, 1.5714285714vw, 22px);
+  color: #111111;
+  background-color: #EDEFF2;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 clamp(16px, 7.1428571429vw, 100px);
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*# sourceMappingURL=index.css.map */

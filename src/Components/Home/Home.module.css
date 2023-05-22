@@ -1,0 +1,8 @@
+.Home .home_container .catalog_and_carousel_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=Home.module.css.map */

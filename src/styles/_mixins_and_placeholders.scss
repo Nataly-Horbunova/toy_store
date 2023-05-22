@@ -1,0 +1,61 @@
+@import "./variables";
+
+@mixin flex($jc:null, $ai:null, $gap:null, $fd: null) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  gap: $gap;
+}
+
+%link {
+  transition: 0.3s ease-in;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+%icon {
+  height: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+%form{
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid $main-color;
+  font-size: $fz-xs;
+  line-height: $lh-xs;
+  font-family: "Open Sans", sans-serif;
+
+  &::placeholder{
+    font-size: $fz-xs;
+    line-height: $lh-xs;
+    font-family: "Open Sans", sans-serif;
+    color: transparentize($main-text-color, 0.3);
+  }
+
+  &:focus{
+    outline: 1px solid $main-color;
+  }
+}
+
+%button{
+  padding: 10px 20px;
+  background-color: $main-color;
+  color: $secondary-color;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+
+  &:hover {
+    background-color: transparentize($main-color, 0.2);
+  }
+}
