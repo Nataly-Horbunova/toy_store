@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 import {HeaderNavList} from "./HeaderNavList";
 import axios from "axios";
 import {CartContext, FavoritesContext} from "../App";
+import {Catalog} from "../Catalog/Catalog";
 
 export function Header() {
     const headerTopRef = useRef(null);
@@ -11,6 +12,8 @@ export function Header() {
     let [data, setData] = useState({});
     const {cart} = useContext(CartContext);
     const {favorites} = useContext(FavoritesContext);
+    const catalogDropDown = useRef(null);
+    const catalogOverlay = useRef(null);
 
     useEffect(() => {
         axios.get('/data.json')
@@ -20,16 +23,15 @@ export function Header() {
     }, [])
 
     useEffect(() => {
-        const headerTop = headerTopRef.current;
-        const headerBottom = headerBottomRef.current;
-
         const handleScroll = () => {
             const scrollTop = document.documentElement.scrollTop;
 
-            if (scrollTop > headerTop.offsetHeight) {
-                headerBottom.classList.add(`${style.sticky}`);
+            if (scrollTop > headerTopRef.current.offsetHeight) {
+                headerBottomRef.current.classList.add(`${style.sticky}`);
+                catalogOverlay.current.classList.add(`${style.sticky}`);
             } else {
-                headerBottom.classList.remove(`${style.sticky}`);
+                headerBottomRef.current.classList.remove(`${style.sticky}`);
+                catalogOverlay.current.classList.remove(`${style.sticky}`);
             }
         };
 
@@ -39,6 +41,11 @@ export function Header() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    function toggleCatalog() {
+        catalogDropDown.current.classList.toggle(style.active);
+        catalogOverlay.current.classList.toggle(style.active);
+    }
 
     return (
         <header className={style.Header}>
@@ -62,8 +69,12 @@ export function Header() {
                 <div className={`container ${style.header_bottom_container}`}>
                     <div className={style.catalog}>
                         <img src={data.header && data.header.catalog.icon} alt="catalog icon"
-                             className={style.catalog_icon}/>
+                             className={style.catalog_icon} onClick={toggleCatalog}/>
                         <span className={style.catalog_text}>{data.header && data.header.catalog.text}</span>
+                        <div className={style.header_catalog} ref={catalogDropDown}>
+                            <Catalog/>
+                        </div>
+
                     </div>
                     <div className={style.search_wrapper}>
                         <input type="text" className={style.search_input}
@@ -80,18 +91,19 @@ export function Header() {
                         <div className={style.icon_wrapper}>
                             <img src={data.header && data.header.icons_group.favorite} className={style.icon_img}
                                  alt="heart icon"/>
-                            { favorites.length > 0 && <span className={style.icon_qty}>{favorites.length}</span>}
+                            {favorites.length > 0 && <span className={style.icon_qty}>{favorites.length}</span>}
 
                         </div>
                         <div className={style.icon_wrapper}>
                             <img src={data.header && data.header.icons_group.cart} className={style.icon_img}
                                  alt="cart icon"/>
-                            { cart.length > 0 && <span className={style.icon_qty}>{cart.length}</span>}
+                            {cart.length > 0 && <span className={style.icon_qty}>{cart.length}</span>}
                         </div>
                     </div>
                 </div>
-
+                <div className={style.catalog_overlay} onClick={toggleCatalog} ref={catalogOverlay}></div>
             </div>
+
 
         </header>
 

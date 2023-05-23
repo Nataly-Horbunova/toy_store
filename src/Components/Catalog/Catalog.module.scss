@@ -7,7 +7,8 @@
   border-radius: 0 0 10px 10px;
   box-shadow: $box-shadow;
   align-self: stretch;
-
+  height: 450px;
+  
   .catalog_nav_list {
     @include flex(space-between, flex-start, 20px, column);
 
@@ -18,7 +19,7 @@
         @extend %link;
         font-weight: 500;
 
-        img{
+        img {
           height: 18px;
         }
       }

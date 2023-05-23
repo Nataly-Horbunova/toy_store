@@ -1,19 +1,7 @@
 @import "../../styles/mixins_and_placeholders";
 @import "../../styles/variables";
 
-.Carousel{
+.Carousel {
   margin-top: 10px;
-  border-radius: 10px;
-  max-height: 440px;
-
-  .carousel_item{
-
-
-    .carousel_img{
-      display: block;
-      width: 100%;
-      object-fit: contain;
-    }
-  }
-
+  height: clamp(200px, calc(440 / 1400 * 100vw), 440px);
 }

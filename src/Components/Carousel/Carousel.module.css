@@ -1,12 +1,6 @@
 .Carousel {
   margin-top: 10px;
-  border-radius: 10px;
-  max-height: 440px;
-}
-.Carousel .carousel_item .carousel_img {
-  display: block;
-  width: 100%;
-  object-fit: contain;
+  height: clamp(200px, 31.4285714286vw, 440px);
 }
 
 /*# sourceMappingURL=Carousel.module.css.map */

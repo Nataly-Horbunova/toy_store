@@ -73,14 +73,47 @@
       position: fixed;
       top: 0;
       width: 100%;
-      z-index: 1;
+      z-index: 999;
+    }
+
+    .catalog_overlay {
+      display: none;
+      position: absolute;
+      top: 143px;
+      width: 100vw;
+      height: 100vh;
+      background-color: transparentize(#000, 0.7);
+      z-index: 999;
+
+      &.sticky {
+        top: 80px;
+      }
+
+      &.active {
+        display: block;
+      }
     }
 
     .header_bottom_container {
 
 
       .catalog {
+        position: relative;
         @include flex(flex-start, center, 20px);
+        transition: 0.5s ease-in;
+
+        .header_catalog {
+          display: none;
+          position: absolute;
+          width: 240px;
+          top: 54px;
+          left: 0;
+          z-index: 1000;
+
+          &.active {
+            display: block;
+          }
+        }
 
         &_icon {
           width: 24px;
