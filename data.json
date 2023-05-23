@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo": "/static/media/logo.123e0521b3d71c1bee76.png",
+    "logo": "/toy_store/static/media/logo.123e0521b3d71c1bee76.png",
     "menu": [
       {
         "name": "Home",
@@ -25,20 +25,20 @@
     ],
     "login": {
       "text": "Login",
-      "icon": "/static/media/login.53a21a029f02b7c62155ff6f3f365b3d.svg"
+      "icon": "/toy_store/static/media/login.53a21a029f02b7c62155ff6f3f365b3d.svg"
     },
     "catalog": {
       "text": "Catalog",
-      "icon": "/static/media/catalog.a71f6513cac7c4704a7662576b9365ef.svg"
+      "icon": "/toy_store/static/media/catalog.a71f6513cac7c4704a7662576b9365ef.svg"
     },
     "search": {
       "text": "Search...",
-      "icon": "/static/media/search.2d83c4067b7d8a0bd85e00af9fda5e4b.svg"
+      "icon": "/toy_store/static/media/search.2d83c4067b7d8a0bd85e00af9fda5e4b.svg"
     },
     "icons_group": {
-      "recent": "/static/media/recent.527ff08ac4c0c5c2dfaab4b4694e4e66.svg",
-      "favorite": "/static/media/favorite.6c2cf71961bf6d715791efe9abcbbd6b.svg",
-      "cart": "/static/media/cart.a7778cf7f22bfef367e39a61ec1e75af.svg"
+      "recent": "/toy_store/static/media/recent.527ff08ac4c0c5c2dfaab4b4694e4e66.svg",
+      "favorite": "/toy_store/static/media/favorite.6c2cf71961bf6d715791efe9abcbbd6b.svg",
+      "cart": "/toy_store/static/media/cart.a7778cf7f22bfef367e39a61ec1e75af.svg"
     }
   },
   "catalog": [
@@ -46,83 +46,83 @@
       "id": "001",
       "name": "Infant Toys",
       "path": "infant-toys",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     },
     {
       "id": "002",
       "name": "Vehicles & Remote Control",
       "path": "vehicles-and-remote-control",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     },
     {
       "id": "003",
       "name": "Soft Toys",
       "path": "soft-toys",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     },
     {
       "id": "004",
       "name": "Dolls",
       "path": "dolls",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     },
     {
       "id": "005",
       "name": "Construction",
       "path": "construction",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     },
     {
       "id": "006",
       "name": "Creativity Toys",
       "path": "creativity-toys",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     },
     {
       "id": "007",
       "name": "Board Games",
       "path": "board-games",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     },
     {
       "id": "008",
       "name": "Action Figures and Robots",
       "path": "action-figures-and-robots",
-      "icon": "/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
+      "icon": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg"
     }
   ],
   "banners": [
     {
       "id": "1",
-      "img": "/static/media/banner_1.739f21fead5e2890c673.png"
+      "img": "/toy_store/static/media/banner_1.739f21fead5e2890c673.png"
     },
     {
       "id": "2",
-      "img": "/static/media/banner_2.5082cb025c11c98fac45.png"
+      "img": "/toy_store/static/media/banner_2.5082cb025c11c98fac45.png"
     },
     {
       "id": "3",
-      "img": "/static/media/banner_3.155c7e618d7b35225ac6.png"
+      "img": "/toy_store/static/media/banner_3.155c7e618d7b35225ac6.png"
     },
     {
       "id": "4",
-      "img": "/static/media/banner_4.dd15477a9d8242ad5882.png"
+      "img": "/toy_store/static/media/banner_4.dd15477a9d8242ad5882.png"
     },
     {
       "id": "5",
-      "img": "/static/media/banner_5.2aa4e0b559dd76bbae8c.png"
+      "img": "/toy_store/static/media/banner_5.2aa4e0b559dd76bbae8c.png"
     },
     {
       "id": "6",
-      "img": "/static/media/banner_6.4c361cd928033dfb60a5.png"
+      "img": "/toy_store/static/media/banner_6.4c361cd928033dfb60a5.png"
     }
   ],
   "products": {
     "icons": {
-      "cart_outlined": "/static/media/cart_oulined.5965cd9c961f5d8923caf922df569192.svg",
-      "cart_filled_green": "/static/media/cart_filled.144e0f2d2f1d717dd504fa4a689c10b9.svg",
-      "favorite_outlined": "/static/media/favorite_outlined.e651bd793dcc1f4ba21d6f9ba9005368.svg",
-      "favorite_filled_red": "/static/media/favorite_filled.1613a3b36943c97d3a1c53719950bb83.svg"
+      "cart_outlined": "/toy_store/static/media/cart_oulined.5965cd9c961f5d8923caf922df569192.svg",
+      "cart_filled_green": "/toy_store/static/media/cart_filled.144e0f2d2f1d717dd504fa4a689c10b9.svg",
+      "favorite_outlined": "/toy_store/static/media/favorite_outlined.e651bd793dcc1f4ba21d6f9ba9005368.svg",
+      "favorite_filled_red": "/toy_store/static/media/favorite_filled.1613a3b36943c97d3a1c53719950bb83.svg"
     },
     "sections": [
       {
@@ -149,7 +149,7 @@
         "description": "A beloved classic toy gets an exciting new twist with this deluxe pounding bench. As the colourful, non-removable pegs on the bench go up and down, they play peekaboo, taking turns showing their friendly smiles while the child has fun practicing fine motor skills.\n\nParent will love that the pegs are attached so they can't get lost. Children delight in striking a peg with the mallet and watching one on the opposite side pop up. Once kids have seen this cause-and-effect in action, they will enjoy predicting which peg will pop up next.\n\nAs they develop hand-eye coordination and fine motor skills, they will also be learning numbers and colours by counting the pegs and naming each colour as it pops up.\n\nThe Melissa and Doug Deluxe Pounding Bench Wooden Toy makes a great gift for kids 2 to 4 years. A sturdy wooden mallet is included.",
         "code": "96071",
         "manufacturer": "Melissa & Doug",
-        "img": "/static/media/prod_96071.bc29511a806aaff2c17c.jpg",
+        "img": "/toy_store/static/media/prod_96071.bc29511a806aaff2c17c.jpg",
         "category": "Infant Toys",
         "best_sellers": true,
         "new": true,
@@ -175,7 +175,7 @@
         "description": "A boppi large wooden activity cube. This multifunction sensory play box offers a 5-in-1 early years learning experience for little ones. The playbox comes with a bead maze roller coaster on a reversible lid, a clock, a counting abacus, a 6-piece animal shape sorter, and an animal slider. The bead maze lid can be flipped over to store the box neatly away.",
         "code": "96072",
         "manufacturer": "Click Europe",
-        "img": "/static/media/prod_96072.5aca8640c449e210cf9f.jpg",
+        "img": "/toy_store/static/media/prod_96072.5aca8640c449e210cf9f.jpg",
         "category": "Infant Toys",
         "best_sellers": false,
         "new": true,
@@ -201,7 +201,7 @@
         "description": "Tap into big fun with the LeapStart interactive early learning system, perfect for school readiness and success. Recommended by 97% of teachers, LeapStart is packed with school and life skills for curious 2-7 year olds.\n\nLeapStart works with a library of replayable activity books (sold separately) that cover four learning levels: Nursery through to Year 1. Each learning level teaches and supports 50+ core and life skills that complement the UK national curriculum. Get them excited about everything from phonics to problem solving, and STEM to social skills. Each book contains over 30 activities.\n\nThe magic behind LeapStart is a small camera in the stylus that reads tiny dots on the book pages. Tap it anywhere in the book and games, jokes and songs will come to life as they hunt for letters, identify animal tracks, design a robot and so much more.\n\nIncludes a 14 page sampler book Requires two AA batteries (not included). Activity books are sold separately.",
         "code": "96073",
         "manufacturer": "VTech",
-        "img": "/static/media/prod_96073.43444a3d2e4cbba78aff.jpg",
+        "img": "/toy_store/static/media/prod_96073.43444a3d2e4cbba78aff.jpg",
         "category": "Infant Toys",
         "best_sellers": true,
         "new": true,
@@ -227,7 +227,7 @@
         "description": "X-Racer's turbo truck will blow your mind! Service your T-Racer vehicles in X-Racer's Turbo Truck, he's the coolest and most mysterious driver in Turbo City. Change the wheels, charge the vehicle, check the car is ready for the race! When it's ready, put it in the launcher, fire... and compete! When you finish, put X-Racer in the driver cockpit, and win another circuit! Mix & Race with T-Racers by swaping all the parts including the wheels to customise any vehicle. There are more than 500 possible combinations!",
         "code": "96074",
         "manufacturer": "Magic Box Toys",
-        "img": "/static/media/prod_96074.3bba291e42aa4f0da954.jpg",
+        "img": "/toy_store/static/media/prod_96074.3bba291e42aa4f0da954.jpg",
         "category": "Vehicles & Remote Control",
         "best_sellers": true,
         "new": true,
@@ -253,7 +253,7 @@
         "description": "X-Racer's turbo truck will blow your mind! Service your T-Racer vehicles in X-Racer's Turbo Truck, he's the coolest and most mysterious driver in Turbo City. Change the wheels, charge the vehicle, check the car is ready for the race! When it's ready, put it in the launcher, fire... and compete! When you finish, put X-Racer in the driver cockpit, and win another circuit! Mix & Race with T-Racers by swaping all the parts including the wheels to customise any vehicle. There are more than 500 possible combinations!",
         "code": "96074",
         "manufacturer": "Magic Box Toys",
-        "img": "/static/media/prod_96074.3bba291e42aa4f0da954.jpg",
+        "img": "/toy_store/static/media/prod_96074.3bba291e42aa4f0da954.jpg",
         "category": "Vehicles & Remote Control",
         "best_sellers": true,
         "new": true,
@@ -279,7 +279,7 @@
         "description": "X-Racer's turbo truck will blow your mind! Service your T-Racer vehicles in X-Racer's Turbo Truck, he's the coolest and most mysterious driver in Turbo City. Change the wheels, charge the vehicle, check the car is ready for the race! When it's ready, put it in the launcher, fire... and compete! When you finish, put X-Racer in the driver cockpit, and win another circuit! Mix & Race with T-Racers by swaping all the parts including the wheels to customise any vehicle. There are more than 500 possible combinations!",
         "code": "96074",
         "manufacturer": "Magic Box Toys",
-        "img": "/static/media/prod_96074.3bba291e42aa4f0da954.jpg",
+        "img": "/toy_store/static/media/prod_96074.3bba291e42aa4f0da954.jpg",
         "category": "Vehicles & Remote Control",
         "best_sellers": true,
         "new": true,
@@ -311,13 +311,13 @@
       "cart": {
         "text_add": "Add to cart",
         "text_remove": "Remove from cart",
-        "icon": "/static/media/cart.a7778cf7f22bfef367e39a61ec1e75af.svg"
+        "icon": "/toy_store/static/media/cart.a7778cf7f22bfef367e39a61ec1e75af.svg"
       },
       "favorite": {
         "id": "02",
         "text_add": "Add to favourites",
         "text_remove": "Remove from favourites",
-        "icon": "/static/media/favorite.6c2cf71961bf6d715791efe9abcbbd6b.svg"
+        "icon": "/toy_store/static/media/favorite.6c2cf71961bf6d715791efe9abcbbd6b.svg"
       }
     },
     "reviews": {
