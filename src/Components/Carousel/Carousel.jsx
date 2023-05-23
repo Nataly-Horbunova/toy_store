@@ -20,17 +20,18 @@ export function Carousel() {
 
 
     return (
-        <AutoplaySlider
-            play={true}
-            cancelOnInteraction={false}
-            interval={3000}
-            className={style.Carousel}
-        >
-            {
-                banners && banners.map(banner => {
-                    return <div data-src={banner.img} key={banner.id}/>
-                })
-            }
-        </AutoplaySlider>
+        <></>
+        // <AutoplaySlider
+        //     play={true}
+        //     cancelOnInteraction={false}
+        //     interval={3000}
+        //     className={style.Carousel}
+        // >
+        //     {
+        //         banners && banners.map(banner => {
+        //             return <div data-src={banner.img} key={banner.id}/>
+        //         })
+        //     }
+        // </AutoplaySlider>
     )
 }

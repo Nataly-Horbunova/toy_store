@@ -19,7 +19,7 @@ function App() {
     let [cart, setCart] = useState([]);
 
 
-console.log(JSON.stringify(data));
+// console.log(JSON.stringify(data));
 
     return (
         <div className="App">
