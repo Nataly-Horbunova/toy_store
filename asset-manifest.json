@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/toy_store/static/css/main.b464ae6e.css",
+    "main.js": "/toy_store/static/js/main.64b492b0.js",
+    "static/media/banner_3.png": "/toy_store/static/media/banner_3.155c7e618d7b35225ac6.png",
+    "static/media/banner_6.png": "/toy_store/static/media/banner_6.4c361cd928033dfb60a5.png",
+    "static/media/banner_1.png": "/toy_store/static/media/banner_1.739f21fead5e2890c673.png",
+    "static/media/banner_2.png": "/toy_store/static/media/banner_2.5082cb025c11c98fac45.png",
+    "static/media/banner_4.png": "/toy_store/static/media/banner_4.dd15477a9d8242ad5882.png",
+    "static/media/banner_5.png": "/toy_store/static/media/banner_5.2aa4e0b559dd76bbae8c.png",
+    "static/media/logo.png": "/toy_store/static/media/logo.123e0521b3d71c1bee76.png",
+    "static/media/OpenSans-Medium.woff": "/toy_store/static/media/OpenSans-Medium.e5e8e266afac5469bf79.woff",
+    "static/media/OpenSans-Regular.woff": "/toy_store/static/media/OpenSans-Regular.b92cb4a9aaeffb93908d.woff",
+    "static/media/OpenSans-Bold.woff": "/toy_store/static/media/OpenSans-Bold.b37d1709d6c6974c1258.woff",
+    "static/media/prod_96072.jpg": "/toy_store/static/media/prod_96072.5aca8640c449e210cf9f.jpg",
+    "static/media/prod_96073.jpg": "/toy_store/static/media/prod_96073.43444a3d2e4cbba78aff.jpg",
+    "static/media/VarelaRound-Regular.woff": "/toy_store/static/media/VarelaRound-Regular.642a9494f70d6a108dbb.woff",
+    "static/media/prod_96074.jpg": "/toy_store/static/media/prod_96074.3bba291e42aa4f0da954.jpg",
+    "static/media/OpenSans-Medium.woff2": "/toy_store/static/media/OpenSans-Medium.da0b9f0ba00f25c69290.woff2",
+    "static/media/OpenSans-Regular.woff2": "/toy_store/static/media/OpenSans-Regular.4361a1a4c7bcc152b0dd.woff2",
+    "static/media/OpenSans-Bold.woff2": "/toy_store/static/media/OpenSans-Bold.53adcff143a448b00f77.woff2",
+    "static/media/VarelaRound-Regular.woff2": "/toy_store/static/media/VarelaRound-Regular.26a98fcde3f550d04842.woff2",
+    "static/media/prod_96071.jpg": "/toy_store/static/media/prod_96071.bc29511a806aaff2c17c.jpg",
+    "static/media/recent.svg": "/toy_store/static/media/recent.527ff08ac4c0c5c2dfaab4b4694e4e66.svg",
+    "static/media/cart_filled.svg": "/toy_store/static/media/cart_filled.144e0f2d2f1d717dd504fa4a689c10b9.svg",
+    "static/media/cart.svg": "/toy_store/static/media/cart.a7778cf7f22bfef367e39a61ec1e75af.svg",
+    "static/media/favorite_outlined.svg": "/toy_store/static/media/favorite_outlined.e651bd793dcc1f4ba21d6f9ba9005368.svg",
+    "static/media/catalog.svg": "/toy_store/static/media/catalog.a71f6513cac7c4704a7662576b9365ef.svg",
+    "static/media/favorite_filled.svg": "/toy_store/static/media/favorite_filled.1613a3b36943c97d3a1c53719950bb83.svg",
+    "static/media/cart_oulined.svg": "/toy_store/static/media/cart_oulined.5965cd9c961f5d8923caf922df569192.svg",
+    "static/media/favorite.svg": "/toy_store/static/media/favorite.6c2cf71961bf6d715791efe9abcbbd6b.svg",
+    "static/media/search.svg": "/toy_store/static/media/search.2d83c4067b7d8a0bd85e00af9fda5e4b.svg",
+    "index.html": "/toy_store/index.html",
+    "static/media/login.svg": "/toy_store/static/media/login.53a21a029f02b7c62155ff6f3f365b3d.svg",
+    "static/media/chevron-right.svg": "/toy_store/static/media/chevron-right.5a77f5a923172b6347908b2021e8c84f.svg",
+    "main.b464ae6e.css.map": "/toy_store/static/css/main.b464ae6e.css.map",
+    "main.64b492b0.js.map": "/toy_store/static/js/main.64b492b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b464ae6e.css",
+    "static/js/main.64b492b0.js"
+  ]
+}
