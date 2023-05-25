@@ -1,16 +1,19 @@
 import style from './Catalog.module.scss';
 import {NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
-import axios from "axios";
+// import axios from "axios";
+import data from "../../data/data.json";
 
 export function Catalog() {
     let [catalog, setCatalog] = useState([]);
 
     useEffect(() => {
-        axios.get('./data.json')
-            .then(response => {
-                setCatalog(response.data.catalog);
-            })
+        setCatalog(data.catalog);
+
+        // axios.get('./data.json')
+        //     .then(response => {
+        //         setCatalog(response.data.catalog);
+        //     })
     }, [])
 
     return (

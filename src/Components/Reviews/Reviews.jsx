@@ -8,7 +8,6 @@ export function Reviews({reviewsData, product}) {
     let [currentMessage, setCurrentMessage] = useState(null);
     let [currentUser, setCurrentUser] = useState(null);
 
-
     const currentDate = new Date();
     const formattedDate = `${currentDate.getFullYear()}-${('0' + (currentDate.getMonth() + 1)).slice(-2)}-${('0' + currentDate.getDate()).slice(-2)}`;
     const formattedTime = `${('0' + currentDate.getHours()).slice(-2)}:${('0' + currentDate.getMinutes()).slice(-2)}:${('0' + currentDate.getSeconds()).slice(-2)}`;
@@ -55,7 +54,7 @@ export function Reviews({reviewsData, product}) {
                        onChange={currentUserHandler} required/>
                 <textarea className={style.reviews_form_message} placeholder={reviewsData.form.message}
                           onChange={currentMessageHandler} required></textarea>
-                <button className={style.reviews_form_btn} >{reviewsData.form.button}</button>
+                <button className={style.reviews_form_btn}>{reviewsData.form.button}</button>
             </form>
         </div>
     )

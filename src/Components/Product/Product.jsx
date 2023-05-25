@@ -1,10 +1,11 @@
 import style from './Product.module.scss';
 import {useContext, useEffect, useRef, useState} from "react";
-import axios from "axios";
+// import axios from "axios";
 import {useNavigate, useParams} from "react-router-dom";
 import {Reviews} from "../Reviews/Reviews";
 import {CartContext, FavoritesContext} from "../App";
 import {checkUnique} from "../App";
+import data from "../../data/data.json";
 
 
 export function Product() {
@@ -52,12 +53,16 @@ export function Product() {
     }
 
     useEffect(() => {
-        axios.get('/data.json')
-            .then(response => {
-                const product = findProduct(response.data.products.list, productId);
-                setProduct(product);
-                setPageData(response.data.productPage);
-            })
+        const product = findProduct(data.products.list, productId);
+        setProduct(product);
+        setPageData(data.productPage);
+
+        // axios.get('/data.json')
+        //     .then(response => {
+        //         const product = findProduct(response.data.products.list, productId);
+        //         setProduct(product);
+        //         setPageData(response.data.productPage);
+        //     })
     }, [])
 
     return (

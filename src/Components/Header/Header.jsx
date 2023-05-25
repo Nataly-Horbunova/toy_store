@@ -2,9 +2,10 @@ import style from './Header.module.scss'
 import {useContext, useEffect, useRef, useState} from "react";
 import {NavLink} from "react-router-dom";
 import {HeaderNavList} from "./HeaderNavList";
-import axios from "axios";
+// import axios from "axios";
 import {CartContext, FavoritesContext} from "../App";
 import {Catalog} from "../Catalog/Catalog";
+import jsonData from "../../data/data.json";
 
 export function Header() {
     const headerTopRef = useRef(null);
@@ -16,10 +17,12 @@ export function Header() {
     const catalogOverlay = useRef(null);
 
     useEffect(() => {
-        axios.get('/data.json')
-            .then(response => {
-                setData(response.data);
-            })
+        setData(jsonData);
+
+        // axios.get('/data.json')
+        //     .then(response => {
+        //         setData(response.data);
+        //     })
     }, [])
 
     useEffect(() => {

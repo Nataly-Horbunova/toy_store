@@ -7,7 +7,9 @@
   border-radius: 0 0 10px 10px;
   box-shadow: $box-shadow;
   align-self: stretch;
-  height: 450px;
+  height: 490px;
+  width: 240px;
+  flex-shrink: 0;
   
   .catalog_nav_list {
     @include flex(space-between, flex-start, 20px, column);

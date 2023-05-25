@@ -2,6 +2,7 @@ import style from './ProductsSections.module.scss';
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {ProductsSection} from "../ProductsSection/ProductsSection";
+import data from "../../data/data.json";
 
 export function ProductsSections({favorites, setFavorites}) {
     let [products, setProducts] = useState(null);
@@ -9,11 +10,14 @@ export function ProductsSections({favorites, setFavorites}) {
 
 
     useEffect(() => {
-        axios.get('data.json')
-            .then(response => {
-                setProducts(response.data.products);
-                setSections(response.data.products.sections);
-            })
+        setProducts(data.products);
+        setSections(data.products.sections);
+
+        // axios.get('data.json')
+        //     .then(response => {
+        //         setProducts(response.data.products);
+        //         setSections(response.data.products.sections);
+        //     })
     }, []);
 
     function filterProducts(products, sectionName) {
@@ -32,7 +36,8 @@ export function ProductsSections({favorites, setFavorites}) {
                         let sectionProducts = (filterProducts(products.list, section.name));
                         return (
                             <ProductsSection sectionTitle={section.title} products={sectionProducts}
-                                             icons={products.icons} key={section.id} favorites={favorites} setFavorites={setFavorites}/>
+                                             icons={products.icons} key={section.id} favorites={favorites}
+                                             setFavorites={setFavorites}/>
                         )
                     }
                 })

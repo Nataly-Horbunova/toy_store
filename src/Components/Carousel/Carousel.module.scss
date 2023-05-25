@@ -3,5 +3,15 @@
 
 .Carousel {
   margin-top: 10px;
-  height: clamp(200px, calc(440 / 1400 * 100vw), 440px);
+  height: clamp(200px, calc(480 / 1400 * 100vw), 480px);
+  border-radius: 10px;
+
+
+  .carousel_img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
 }
